@@ -1,13 +1,109 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fuertes cocinas + closets</title>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
+
 <body>
-    <h1>Nuestro sitio web lanzará muy pronto</h1>
+    <style>
+        :root {
+            --background: #666;
+            --accent: #c33;
+            --text: #fff;
+            --background-lite: var(--text);
+            --text-lite: var(--background);
+        }
+        html {
+            width: 100%;
+            height: 100%;
+        }
+        body {
+            /* background-image: url(background.jpg); */
+            background-color: rgba(from var(--background) r g b / 0.8);
+            background-image: linear-gradient(rgba(from var(--accent) r g b / 0.3), rgba(from var(--background) r g b / 0.8)),
+            url(background.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: var(--text);
+            
+        }
+        
+        span {
+            color: var(--accent);
+        }
+        
+        h1,
+        p {
+            text-align: center;
+        }
+        
+        .card {
+            border-radius: 5px;
+            padding: 5%;
+            /* margin: 3em 20em; */
+            height: 90vh;
+            width: auto;
+            background-color: rgba(from var(--background) r g b / 0.96);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            
+        }
+        
+        .card:hover {
+            background-color: rgba(from var(--background) r g b / 1);
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+        
+        .button {
+            cursor: pointer;
+            transition: 0.3s;
+            width: 15rem;
+            margin:0.5rem;
+            font-family: lato, sans-serif;
+            font-weight: bold;
+            font-size: 1em;
+            letter-spacing: 0.1em;
+            text-decoration: none;
+            color: var(--text);
+            display: inline-block;
+            padding: 10px 40px 10px 40px;
+            position: relative;
+            border: 3px solid #ffffff;
+            border-radius: 20px;
+            background-color: #0000;
+        }
+        .button:hover {
+            color: var(--accent);
+            border-color: var(--accent);
+        }
+
+        .links-list {
+            padding: 0;
+            list-style-type: none;
+            display: flex;
+            flex: auto;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+    <div class="card">
+        <img src="favicon.svg" alt="Logo Fuertes" style="display:block; margin:auto; width: 45%;">
+        <h1>Nuestro sitio web lanzará <span>muy pronto</span>.</h1>
+        <p>Mientas tanto, podés visitar nuestras redes sociales.</p>
+        <ul class="links-list">
+            <li><button class="button"><i class="fa-brands fa-instagram"></i> Instagram</button></li>
+            <li><button class="button"><i class="fa-brands fa-facebook"></i> Facebook</button></li>
+            <li><button class="button"><i class="fa-solid fa-location-dot"></i> Google Maps</button></li>
+        </ul>
+    </div>
+
+
 </body>
+
 </html>
